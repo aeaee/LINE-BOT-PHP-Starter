@@ -26,7 +26,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$messages,"เทส"],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
@@ -40,12 +40,8 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-			//echo $result . "ค่า\r\n";
-			if ($result="สวัสดี") { 
-				echo "สวัสดีค่ะ มิวสิคมาแล้วค่ะ";
-			} else {
-				echo "หนูยังไม่เข้าใจที่พีู่ดมาเลยอ้ะ???";
-			}
+			echo $result . "\r\n";
+
 		}
 	}
 }
