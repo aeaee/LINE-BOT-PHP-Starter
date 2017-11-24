@@ -29,12 +29,14 @@ if (!is_null($events['events'])) {
 				$text = "ไม่น่ารักเลยนะคะ!";
 			} elseif (strpos($u_text , '555')!== false) { 
 				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
+			} elseif(  (strpos($u_text , 'นอน')!== false) || (strpos($u_text , 'ฝันดี')!== false) || (strpos($u_text , 'ราตรีสวัสดิ์')!== false)  ) { 
+				$text = "ฝันดีนะคะ\nเจอสิคในฝันกันนะคะ";
 			} elseif (strpos($u_text , 'ถถถ')!== false) { 
 				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
 			} elseif (strpos($u_text , 'กวน')!== false) { 
 				$text = "ทำไมต้องแกล้งสิคล่ะ โดยแย่!!!";
 			} else { 
-				$text = "พี่พิมพ์อะไรมาอ่ะคะ???";
+				$text = "พี่พิมพ์อะไรมาอ่ะคะ??\nสิครู้จักแค่ไม่กี่คำเอง เช่น สวัสดี 555 ถถถ สิค ดีจ้า เข้ากลุ่ม แย่ กวน นอน ฝันดี";
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
