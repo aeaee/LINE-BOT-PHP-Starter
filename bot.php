@@ -31,7 +31,7 @@ if (!is_null($events['events'])) {
 				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
 			} elseif (strpos($u_text , 'ถถถ')!== false) { 
 				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
-			} elseif (strpos($u_text , 'กวนสิค')!== false) { 
+			} elseif (strpos($u_text , 'กวน')!== false) { 
 				$text = "ทำไมต้องแกล้งสิคล่ะ โดยแย่!!!";
 			} else { 
 				$text = "พี่พิมพ์อะไรมาอ่ะคะ???";
