@@ -12,7 +12,14 @@ if (!is_null($events['events'])) {
 		// Reply only when message sent is in 'text' format
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
-			$text = $event['message']['text'];
+			$u_text = $event['message']['text'];
+			if (($u_text=="ดีจ้า")||($u_text=="สวัสดี")) {
+				$text = "สวัสดีค่า มิวสิค BNK48 ค่า";
+			} elseif(($u_text=="แซก")||($u_text=="ไอ้แซก")||($u_text=="เด็กเฬว")||($u_text=="เฬว")) { 
+				$text = "พี่ไปเรียกคนชื่อแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ";
+			} else { 
+				$text = "พี่พิมพ์อะไรมาอ่ะคะ???";
+			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
 
@@ -26,7 +33,7 @@ if (!is_null($events['events'])) {
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages,"เทส"],
+				'messages' => [$messages],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
