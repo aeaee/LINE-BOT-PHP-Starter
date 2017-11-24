@@ -40,7 +40,12 @@ if (!is_null($events['events'])) {
 			$result = curl_exec($ch);
 			curl_close($ch);
 
-			echo $result . "ค่า\r\n";
+			//echo $result . "ค่า\r\n";
+			if ($result="สวัสดี") { 
+				echo "สวัสดีค่ะ มิวสิคมาแล้วค่ะ";
+			} else {
+				echo "หนูยังไม่เข้าใจที่พีู่ดมาเลยอ้ะ???";
+			}
 		}
 	}
 }
