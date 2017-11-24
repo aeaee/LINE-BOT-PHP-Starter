@@ -13,12 +13,12 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$u_text = $event['message']['text'];
-			if (($u_text=="ดีจ้า")||($u_text=="สวัสดี")) {
+			if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'สวัสดี')!== false)  ) {
 				$text = "สวัสดีค่า มิวสิค BNK48 ค่า";
 			} elseif(  (strpos($u_text , 'แซก')!== false) || (strpos($u_text , 'เลว')!== false) || (strpos($u_text , 'เฬว')!== false)  ) { 
 				$text = "พี่ไปเรียกแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ";
 			} elseif( (strpos($u_text , 'รัก')!== false) || (strpos($u_text , 'รักน้า')!== false) || (strpos($u_text , 'รักสิค')!== false) ) { 
-				$text = "ใครบอกรักสิคอ่ะคะ <3";
+				$text = "รักสิคจริงเหรอคะ <3";
 			} elseif (strpos($u_text , 'ไม่ยุ่ง')!== false) { 
 				$text = "สิคไม่ยุ่งก็ได้ค่ะ เชอะ!!!";
 			} elseif (strpos($u_text , 'สิค')!== false) { 
@@ -29,6 +29,10 @@ if (!is_null($events['events'])) {
 				$text = "ไม่น่ารักเลยนะคะ!";
 			} elseif (strpos($u_text , '555')!== false) { 
 				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
+			} elseif (strpos($u_text , 'ถถถ')!== false) { 
+				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
+			} elseif (strpos($u_text , 'กวนสิค')!== false) { 
+				$text = "ทำไมต้องแกล้งสิคล่ะ โดยแย่!!!";
 			} else { 
 				$text = "พี่พิมพ์อะไรมาอ่ะคะ???";
 			}
