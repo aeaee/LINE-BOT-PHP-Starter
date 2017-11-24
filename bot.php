@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 				$text = "สวัสดีค่า มิวสิค BNK48 ค่า";
 			} elseif(  (strpos($u_text , 'แซก')) || (strpos($u_text , 'เลว')) || (strpos($u_text , 'เฬว'))  ) { 
 				$text = "พี่ไปเรียกแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ";
-			} elseif(($u_text=="รักน้า")||($u_text=="รักสิค")||($u_text=="รัก")) { 
+			} elseif( (strpos($u_text , 'รัก')) || (strpos($u_text , 'รักน้า')) || (strpos($u_text , 'รักสิค')) ) { 
 				$text = "ใครบอกรักสิคอ่ะคะ <3";
 			} elseif (strpos($u_text , 'ไม่ยุ่ง')) { 
 				$text = "สิคไม่ยุ่งก็ได้ค่ะ เชอะ!!!";
