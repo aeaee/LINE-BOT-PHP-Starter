@@ -21,6 +21,8 @@ if (!is_null($events['events'])) {
 				$text = "ใครบอกรักสิคอ่ะคะ <3";
 			} elseif (strpos($u_text , 'ไม่ยุ่ง')!== false) { 
 				$text = "สิคไม่ยุ่งก็ได้ค่ะ เชอะ!!!";
+			} elseif (strpos($u_text , 'สิค')!== false) { 
+				$text = "จ๋าาาาาาาาาาาา!";
 			} else { 
 				$text = "พี่พิมพ์อะไรมาอ่ะคะ???";
 			}
