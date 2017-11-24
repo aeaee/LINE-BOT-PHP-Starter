@@ -23,6 +23,8 @@ if (!is_null($events['events'])) {
 				$text = "สิคไม่ยุ่งก็ได้ค่ะ เชอะ!!!";
 			} elseif (strpos($u_text , 'สิค')!== false) { 
 				$text = "จ๋าาาาาาาาาาาา!";
+			} elseif (strpos($u_text , 'เข้ากลุ่ม')!== false) {  
+				$text = "จริงหรอ.... จะเข้ากลุ่มจริงหรอ....\nตามได้ในเพจ Music BNK48 Fanclub เลน้าาาาา";
 			} else { 
 				$text = "พี่พิมพ์อะไรมาอ่ะคะ???";
 			}
