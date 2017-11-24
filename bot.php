@@ -15,11 +15,11 @@ if (!is_null($events['events'])) {
 			$u_text = $event['message']['text'];
 			if (($u_text=="ดีจ้า")||($u_text=="สวัสดี")) {
 				$text = "สวัสดีค่า มิวสิค BNK48 ค่า";
-			} elseif(  (strpos($u_text , 'แซก')) || (strpos($u_text , 'เลว')) || (strpos($u_text , 'เฬว'))  ) { 
+			} elseif(  (strpos($u_text , 'แซก')!== false) || (strpos($u_text , 'เลว')!== false) || (strpos($u_text , 'เฬว')!== false)  ) { 
 				$text = "พี่ไปเรียกแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ";
-			} elseif( (strpos($u_text , 'รัก')) || (strpos($u_text , 'รักน้า')) || (strpos($u_text , 'รักสิค')) ) { 
+			} elseif( (strpos($u_text , 'รัก')!== false) || (strpos($u_text , 'รักน้า')!== false) || (strpos($u_text , 'รักสิค')!== false) ) { 
 				$text = "ใครบอกรักสิคอ่ะคะ <3";
-			} elseif (strpos($u_text , 'ไม่ยุ่ง')) { 
+			} elseif (strpos($u_text , 'ไม่ยุ่ง')!== false) { 
 				$text = "สิคไม่ยุ่งก็ได้ค่ะ เชอะ!!!";
 			} else { 
 				$text = "พี่พิมพ์อะไรมาอ่ะคะ???";
