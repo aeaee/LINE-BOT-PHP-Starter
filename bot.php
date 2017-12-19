@@ -35,7 +35,7 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , '555')!== false) { 
 				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
 			} elseif(  (strpos($u_text , 'นอน')!== false) || (strpos($u_text , 'ฝันดี')!== false) || (strpos($u_text , 'ราตรีสวัสดิ์')!== false)  ) { 
-				$slp_int = array_rand($arr_slp);
+				$ofc_slp = array_rand($arr_slp);
 				 $text = $arr_slp[$ofc_slp];
 				// $text = "ฝันดีนะคะ\nเจอสิคในฝันกันนะคะ";
 			} elseif (strpos($u_text , 'ถถถ')!== false) { 
