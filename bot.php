@@ -13,10 +13,15 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$u_text = $event['message']['text'];
-			if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'สวัสดี')!== false)  ) {
+			$arr_sax = array("พี่ไปเรียกแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ", "ทำไมพี่แซคต้องหยาบคายกับสิคด้วยอ่ะคะ\nเฬวมากค่ะ", "");
+$arr_ofc = array("พี่พิมพ์อะไรมาอ่ะคะ??\nสิครู้จักแค่ไม่กี่คำเอง เช่น สวัสดี 555 ถถถ สิค ดีจ้า เข้ากลุ่ม แย่ กวน นอน ฝันดี\n\nสิคต่อเรือก็ได้นะ อิอิ", "สิคงงอ่ะค่ะ\nพี่พูดภาษาคนได้มั้ยคะ");
+
+if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'สวัสดี')!== false)  ) {
 				$text = "สวัสดีค่า มิวสิค BNK48 ค่า";
 			} elseif(  (strpos($u_text , 'แซก')!== false) || (strpos($u_text , 'เลว')!== false) || (strpos($u_text , 'เฬว')!== false)  ) { 
-				$text = "พี่ไปเรียกแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ";
+				 $sax_int = array_rand($arr_sax);
+				 $text = $arr_sax[$sax_int];
+				// $text = "พี่ไปเรียกแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ";
 			} elseif( (strpos($u_text , 'รัก')!== false) || (strpos($u_text , 'รักน้า')!== false) || (strpos($u_text , 'รักสิค')!== false) ) { 
 				$text = "รักสิคจริงเหรอคะ <3";
 			} elseif (strpos($u_text , 'ไม่ยุ่ง')!== false) { 
@@ -36,7 +41,9 @@ if (!is_null($events['events'])) {
 			} elseif (strpos($u_text , 'กวน')!== false) { 
 				$text = "ทำไมต้องแกล้งสิคล่ะ โดยแย่!!!";
 			} else { 
-				$text = "พี่พิมพ์อะไรมาอ่ะคะ??\nสิครู้จักแค่ไม่กี่คำเอง เช่น สวัสดี 555 ถถถ สิค ดีจ้า เข้ากลุ่ม แย่ กวน นอน ฝันดี\n\nสิคต่อเรือก็ได้นะ อิอิ";
+				$ofc_int = array_rand($arr_ofc);
+				 $text = $arr_ofc[$ofc_int];
+				// $text = "พี่พิมพ์อะไรมาอ่ะคะ??\nสิครู้จักแค่ไม่กี่คำเอง เช่น สวัสดี 555 ถถถ สิค ดีจ้า เข้ากลุ่ม แย่ กวน นอน ฝันดี\n\nสิคต่อเรือก็ได้นะ อิอิ";
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
