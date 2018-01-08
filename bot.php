@@ -29,7 +29,7 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 				$text = "จ๋าาาาาาาาาาาา! \nอย่าเพิ่งกวนสิคสิ สิคจะทำงานนะทู้กโค้นนนนน";
 			} elseif (strpos($u_text , 'สุ่ม')!== false) { 
 				$ran_int = array_rand($arr_ran);
-				$text = "สิคว่านะ พี่".$arr_ran[$ran_int]."คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
+				$text = "สิคว่านะ พี่ ".$arr_ran[$ran_int]."คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
 			} else { 
 				$ofc_int = array_rand($arr_ofc);
 				$text = $arr_ofc[$ofc_int];
