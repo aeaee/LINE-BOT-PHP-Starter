@@ -44,10 +44,12 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'กวน')!== false) { 
 				//$text = "ทำไมต้องแกล้งสิคล่ะ โดยแย่!!!";
 			} elseif (strpos($u_text , 'สุ่ม')!== false) { 
-				//$text = "ทำไมต้องแกล้งสิคล่ะ โดยแย่!!!";
-			} else { 
 				$ran_int = array_rand($arr_ran);
 				$text = "สิคว่านะ พี่".$arr_ran[$ran_int]."คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
+			} else { 
+				$ofc_int = array_rand($arr_ofc);
+				$text = $arr_ofc[$ofc_int];
+				
 			}
 			// Get replyToken
 			$replyToken = $event['replyToken'];
