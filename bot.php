@@ -1,5 +1,5 @@
 <?php
-$access_token = '75lU9HCgLuxnMrdB9TC53Oh2I8HpUGCVjmD9UTbRg9wiYlakPm8QtphmYz7wiMGaDB2zcLC2Vfk7Gc/TFchL/ZHRO7y+eTs9cFwT870BueGnMX/CcH7BYqWHIhHRpp0rEYh73TyZfOAtF1e7flnR5wdB04t89/1O/w1cDnyilFU=';
+$access_token = 'DMBhWuIVZPWWW7Dr7Pg2XVraYCk3BrKp3+tT4P1+ne6GAZfc7VYIcMLgITFzU4zdDB2zcLC2Vfk7Gc/TFchL/ZHRO7y+eTs9cFwT870BueF9CKQJ6Kihei2hRwsH2Td0FZs0emwk6Dt/yiWYISwTFQdB04t89/1O/w1cDnyilFU=';
 
 // Get POST body content
 $content = file_get_contents('php://input');
@@ -41,11 +41,6 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			$messages = [
 				'type' => 'text',
 				'text' => $text
-			];
-			$sticker = [
-				    'type': 'sticker',
-				    'packageId': '1',
-				    'stickerId': '1'
 			];
 
 			// Make a POST Request to Messaging API to reply to sender
