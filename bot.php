@@ -13,7 +13,6 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$u_text = $event['message']['text'];
-			$arr_sax = array("แซกเครียดอะไร บ่นมาได้เลยน้า\nสิคจะนั่งฟังอยู่ข้างๆแซกเองน้าา","พี่ไปเรียกแซกทำไมอ่ะคะ มีคนเล่าให้ฟังว่าเค้าเป็นเด็กเลวระยำ\nสิครับไม่ได้อ่ะค่ะ", "ทำไมพี่แซคต้องหยาบคายกับสิคด้วยอ่ะคะ\nเฬวมากค่ะ", "");
 			$arr_ofc = array(".....");
 			$arr_slp = array("จะนอนแล้้วหรอ\nสิคยังไม่ง่วงเลยค่ะ","ฝันดีนะคะ","やすみなさい");
 			$arr_ran = array("A.","Anato","BlacklotuZ","Cottplay","D_Sora*","EBL","FacePoker","GIFTGRW","help","ItzGunz","jaja_ttp","Jan Techinee","Juffsifly","KEDZANG","Knock Knock","Kuitoon","laplace","Larinnchanpp","mm","MMDC62","patbuster22","PeteZorDor","PnPBlu","Sabastian","Tina(ธิน่า)","Youwillbelieve","ふはま (Fuhama)","กรุบกรอบ20","คนฟิน 2018","ครอส(Cross) ","ต้นไม้ใบเลี้ยงเดี่ยว","นาฬิกาทราย","พี่ช่อ","สมัน","FeoNixFrost");
@@ -43,12 +42,17 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 				'type' => 'text',
 				'text' => $text
 			];
+			$sticker = [
+				    'type': 'sticker',
+				    'packageId': '1',
+				    'stickerId': '1'
+			];
 
 			// Make a POST Request to Messaging API to reply to sender
 			$url = 'https://api.line.me/v2/bot/message/reply';
 			$data = [
 				'replyToken' => $replyToken,
-				'messages' => [$messages],
+				'messages' => [$messages,$sticker],
 			];
 			$post = json_encode($data);
 			$headers = array('Content-Type: application/json', 'Authorization: Bearer ' . $access_token);
