@@ -14,7 +14,7 @@ if (!is_null($events['events'])) {
 			// Get text sent
 			$u_text = $event['message']['text'];
 			$arr_ofc = array(".....");
-			$arr_nu = array("พี่เรียกนุเหรอคะ! \nหนูไปดีกว่า ไม่อยากคุยด้วย","นักบินประจำ Musiv BNK48 Square","");
+			$arr_nu = array("พี่เรียกนุเหรอคะ! \nหนูไปดีกว่า ไม่อยากคุยด้วย","นักบินประจำ Music BNK48 Square");
 			$arr_slp = array("จะนอนแล้้วหรอ\nสิคยังไม่ง่วงเลยค่ะ","ฝันดีนะคะ","やすみなさい");
 			$arr_ran = array("A.","Anato","BlacklotuZ","Cottplay","D_Sora*","EBL","FacePoker","GIFTGRW","help","ItzGunz","jaja_ttp","Jan Techinee","Juffsifly","KEDZANG","Knock Knock","Kuitoon","laplace","Larinnchanpp","mm","MMDC62","patbuster22","PeteZorDor","PnPBlu","Sabastian","Tina(ธิน่า)","Youwillbelieve","ふはま (Fuhama)","กรุบกรอบ20","คนฟิน 2018","ครอส(Cross) ","ต้นไม้ใบเลี้ยงเดี่ยว","นาฬิกาทราย","พี่ช่อ","สมัน","FeoNixFrost");
 if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'สวัสดี')!== false)  ) {
