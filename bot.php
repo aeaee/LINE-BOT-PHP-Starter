@@ -27,7 +27,7 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'สิค')!== false) { 
 				$text = "จ๋าาาาาาาาาาาา! \nอย่าเพิ่งกวนสิคสิ สิคจะทำงานนะทู้กโค้นนนนน";
 			} elseif (strpos($u_text , 'นุ')!== false) { 
-				$text = "พี่เรียกุเหรอคะ! \nหนูไปดีกว่า ไม่อยากคุยด้วย";
+				$text = "พี่เรียกนุเหรอคะ! \nหนูไปดีกว่า ไม่อยากคุยด้วย";
 			} elseif (strpos($u_text , 'สุ่ม')!== false) { 
 				$ran_int = array_rand($arr_ran);
 				$text = "สิคว่านะ พี่ ".$arr_ran[$ran_int]." คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
