@@ -13,7 +13,6 @@ if (!is_null($events['events'])) {
 		if ($event['type'] == 'message' && $event['message']['type'] == 'text') {
 			// Get text sent
 			$u_text = $event['message']['text'];
-			$arr_ofc = array(".....");
 			$arr_nu = array("พี่เรียกนุเหรอคะ! \nหนูไปดีกว่า ไม่อยากคุยด้วย","นักบินประจำ Music BNK48 Square");
 			$arr_slp = array("จะนอนแล้้วหรอ\nสิคยังไม่ง่วงเลยค่ะ","ฝันดีนะคะ","やすみなさい");
 			$arr_ran = array("A.","Anato","BlacklotuZ","Cottplay","D_Sora*","EBL","FacePoker","GIFTGRW","help","ItzGunz","jaja_ttp","Jan Techinee","Juffsifly","KEDZANG","Knock Knock","Kuitoon","laplace","Larinnchanpp","mm","MMDC62","patbuster22","PeteZorDor","PnPBlu","Sabastian","Tina(ธิน่า)","Youwillbelieve","ふはま (Fuhama)","กรุบกรอบ20","คนฟิน 2018","ครอส(Cross) ","ต้นไม้ใบเลี้ยงเดี่ยว","นาฬิกาทราย","พี่ช่อ","สมัน","FeoNixFrost");
@@ -33,9 +32,15 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'สุ่ม')!== false) { 
 				$ran_int = array_rand($arr_ran);
 				$text = "สิคว่านะ พี่ ".$arr_ran[$ran_int]." คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
+			} elseif (strpos($u_text , 'ฝันดี')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "ฝันดีค่ะ";
+			} elseif (strpos($u_text , 'แมวผี')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "ขนลุกเลยค่ะ~~~";
 			} else { 
-				$ofc_int = array_rand($arr_ofc);
-				$text = $arr_ofc[$ofc_int];
+				//$ofc_int = array_rand($arr_ofc);
+				//$text = $arr_ofc[$ofc_int];
 				
 			}
 			// Get replyToken
