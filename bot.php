@@ -17,7 +17,7 @@ if (!is_null($events['events'])) {
 			$arr_slp = array("จะนอนแล้้วหรอ\nสิคยังไม่ง่วงเลยค่ะ","ฝันดีนะคะ","やすみなさい");
 			$arr_ran = array("A.","Anato","BlacklotuZ","Cottplay","D_Sora*","EBL","FacePoker","GIFTGRW","help","ItzGunz","jaja_ttp","Jan Techinee","Juffsifly","KEDZANG","Knock Knock","Kuitoon","laplace","Larinnchanpp","mm","MMDC62","patbuster22","PeteZorDor","PnPBlu","Sabastian","Tina(ธิน่า)","Youwillbelieve","ふはま (Fuhama)","กรุบกรอบ20","คนฟิน 2018","ครอส(Cross) ","ต้นไม้ใบเลี้ยงเดี่ยว","นาฬิกาทราย","พี่ช่อ","สมัน","FeoNixFrost");
 if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'สวัสดี')!== false)  ) {
-				$text = "สวัสดีค่า มิวสิค BNK48 ค่า";
+				$text = "สวัสดีค่า";
 			} elseif (strpos($u_text , '555')!== false) { 
 				$text = "ขำอะไรกันอ่ะคะ สิคขำด้วยได้ป่าว >_<";
 			} elseif (strpos($u_text , 'ถถถ')!== false) { 
