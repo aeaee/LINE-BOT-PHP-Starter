@@ -55,6 +55,9 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'ยุ่ง')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "เสือกไรคะพี่?";
+			} elseif (strpos($u_text , 'เฌอสิค')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "เรือหลวงของข้า";
 			} else { 
 				//$ofc_int = array_rand($arr_ofc);
 				//$text = $arr_ofc[$ofc_int];
