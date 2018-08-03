@@ -46,7 +46,7 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'ลุงหมี')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "น่ารัก";
-			} elseif (strpos($u_text , 'ชิบะ')!== false) { 
+			} elseif (  (strpos($u_text , 'ชิบะ')!== false)  ||  (strpos($u_text , 'วิน')!== false)  ) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "อีหมาแรด";
 			} elseif (strpos($u_text , 'ต้น')!== false) { 
