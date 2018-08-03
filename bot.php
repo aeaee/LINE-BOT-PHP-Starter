@@ -15,6 +15,8 @@ if (!is_null($events['events'])) {
 			$u_text = $event['message']['text'];
 			$arr_nu = array("พี่เรียกนุเหรอคะ! \nหนูไปดีกว่า ไม่อยากคุยด้วย","นักบินประจำ Music BNK48 Square");
 			$arr_slp = array("จะนอนแล้้วหรอ\nสิคยังไม่ง่วงเลยค่ะ","ฝันดีนะคะ","やすみなさい");
+			$arr_back = array("เฬวสึสๆไปเลยค่ะ","ชื่อตะกวดหรอคะ~~~~","เรื่องหักหลัง ไว้ใจเค้าเลยค่ะ");
+			$arr_back = array("ขนลุกเลยค่ะ~","นี่แคปชั่นหรือนี่~");
 			$arr_ran = array("A.","Anato","BlacklotuZ","Cottplay","D_Sora*","EBL","FacePoker","GIFTGRW","help","ItzGunz","jaja_ttp","Jan Techinee","Juffsifly","KEDZANG","Knock Knock","Kuitoon","laplace","Larinnchanpp","mm","MMDC62","patbuster22","PeteZorDor","PnPBlu","Sabastian","Tina(ธิน่า)","Youwillbelieve","ふはま (Fuhama)","กรุบกรอบ20","คนฟิน 2018","ครอส(Cross) ","ต้นไม้ใบเลี้ยงเดี่ยว","นาฬิกาทราย","พี่ช่อ","สมัน","FeoNixFrost");
 if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'สวัสดี')!== false)  ) {
 				$text = "สวัสดีค่า";
@@ -29,15 +31,18 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'นุ')!== false) { 
 				$nu_int = array_rand($arr_nu);
 				$text = $arr_nu[$nu_int];	
-			} elseif (strpos($u_text , 'สุ่ม')!== false) { 
-				$ran_int = array_rand($arr_ran);
-				$text = "สิคว่านะ พี่ ".$arr_ran[$ran_int]." คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
 			} elseif (strpos($u_text , 'ฝันดี')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "ฝันดีค่ะ";
-			} elseif (strpos($u_text , 'แมวผี')!== false) { 
+			} elseif (  (strpos($u_text , 'แมวผี')!== false)  ||  (strpos($u_text , 'คิตตี้')!== false)  ) {
+				$ran_kitty = array_rand($arr_kitty);
+				$text = $arr_kitty[$ran_kitty];
+			} elseif (  (strpos($u_text , 'แบค')!== false)  ||  (strpos($u_text , 'อวาย่า')!== false)  ) {
+				$ran_back = array_rand($arr_back);
+				$text = $arr_back[$ran_back];
+			} elseif (strpos($u_text , 'สุ่ม')!== false) { 
 				//$ran_int = array_rand($arr_ran);
-				$text = "ขนลุกเลยค่ะ~~~";
+				//$text = "สิคว่านะ พี่ ".$arr_ran[$ran_int]." คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
 			} else { 
 				//$ofc_int = array_rand($arr_ofc);
 				//$text = $arr_ofc[$ofc_int];
