@@ -34,7 +34,7 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'ฝันดี')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "ฝันดีค่ะ";
-			} elseif (  (strpos($u_text , 'แมวผี')!== false)  ||  (strpos($u_text , 'คิตตี้')!== false)  ) {
+			} elseif (  (strpos($u_text , 'แมวผี')!== false)  ||  (strpos($u_text , 'คิตตี้')!== false) ||  (strpos($u_text , 'ป้าแมว')!== false)  ) {
 				$ran_kitty = array_rand($arr_kitty);
 				$text = $arr_kitty[$ran_kitty];
 			} elseif (  (strpos($u_text , 'แบค')!== false)  ||  (strpos($u_text , 'อวาย่า')!== false)  ) {
@@ -43,6 +43,18 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'สุ่ม')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				//$text = "สิคว่านะ พี่ ".$arr_ran[$ran_int]." คนนี้แหละ เหมาะสมกับเข็มกลัดเราเลยแหละ";
+			} elseif (strpos($u_text , 'ลุงหมี')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "น่ารัก";
+			} elseif (strpos($u_text , 'ชิบะ')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "อีหมาแรด";
+			} elseif (strpos($u_text , 'ต้น')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "ลิงจ๋อในป่าไผ่";
+			} elseif (strpos($u_text , 'ยุ่ง')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "เสือกไรคะพี่?";
 			} else { 
 				//$ofc_int = array_rand($arr_ofc);
 				//$text = $arr_ofc[$ofc_int];
