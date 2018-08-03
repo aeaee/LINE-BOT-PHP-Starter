@@ -55,7 +55,10 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'เทพ')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "มิจฉาชีพ!";
-			} elseif (strpos($u_text , 'ยุ่ง')!== false) { 
+			} elseif (  (strpos($u_text , 'หลวงพี่')!== false)  ||  (strpos($u_text , 'เขม')!== false) ||  (strpos($u_text , 'บ๋อม')!== false) ) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "คิโม่ย";
+			}  elseif (strpos($u_text , 'ยุ่ง')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "เสือกไรคะพี่?";
 			} else { 
