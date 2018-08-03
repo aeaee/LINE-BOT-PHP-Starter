@@ -16,7 +16,7 @@ if (!is_null($events['events'])) {
 			$arr_nu = array("พี่เรียกนุเหรอคะ! \nหนูไปดีกว่า ไม่อยากคุยด้วย","นักบินประจำ Music BNK48 Square");
 			$arr_slp = array("จะนอนแล้้วหรอ\nสิคยังไม่ง่วงเลยค่ะ","ฝันดีนะคะ","やすみなさい");
 			$arr_back = array("เฬวสึสๆไปเลยค่ะ","ชื่อตะกวดหรอคะ~~~~","เรื่องหักหลัง ไว้ใจเค้าเลยค่ะ");
-			$arr_back = array("ขนลุกเลยค่ะ~","นี่แคปชั่นหรือนี่~");
+			$arr_kitty = array("ขนลุกเลยค่ะ~","นี่แคปชั่นหรือนี่~");
 			$arr_ran = array("A.","Anato","BlacklotuZ","Cottplay","D_Sora*","EBL","FacePoker","GIFTGRW","help","ItzGunz","jaja_ttp","Jan Techinee","Juffsifly","KEDZANG","Knock Knock","Kuitoon","laplace","Larinnchanpp","mm","MMDC62","patbuster22","PeteZorDor","PnPBlu","Sabastian","Tina(ธิน่า)","Youwillbelieve","ふはま (Fuhama)","กรุบกรอบ20","คนฟิน 2018","ครอส(Cross) ","ต้นไม้ใบเลี้ยงเดี่ยว","นาฬิกาทราย","พี่ช่อ","สมัน","FeoNixFrost");
 if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'สวัสดี')!== false)  ) {
 				$text = "สวัสดีค่า";
