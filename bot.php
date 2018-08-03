@@ -52,6 +52,9 @@ if (  (strpos($u_text , 'ดีจ้า')!== false)  ||  (strpos($u_text , 'ส
 			} elseif (strpos($u_text , 'ต้น')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "ลิงจ๋อในป่าไผ่";
+			} elseif (strpos($u_text , 'เทพ')!== false) { 
+				//$ran_int = array_rand($arr_ran);
+				$text = "มิจฉาชีพ!";
 			} elseif (strpos($u_text , 'ยุ่ง')!== false) { 
 				//$ran_int = array_rand($arr_ran);
 				$text = "เสือกไรคะพี่?";
